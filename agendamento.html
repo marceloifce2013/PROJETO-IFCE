@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <H1>Clínica Saúde Rápido</H1>
+    <h5>Sua saúde em primeiro lugar!</h5>
+    <img src="logo.png" width="100" height="100">
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Página Inicial</a></li>
+            <li><a href="detalhe.html"> Detalhes</a></li>
+            <li><a href="autor.html"> Autor</a></li>
+            <li><a href="adm.html"> Administrativo</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form>
+            <h2> Agendamento</h2>
+
+            <form action="/action_page.php">
+                <label for="especialidades">Especialidades:</label>
+                <select id="especialidades" name="especialidades">
+                    <option value="clinico_geral">Clínico Geral</option>
+                    <option value="fisioterapeuta">Fisioterapeuta</option>
+                    <option value="psicologo">Psicólogo</option>
+                    <option value="nutricionista">Nutricionista</option>
+                    <option value="cardiologista">Cardiologista</option>
+                </select><br>
+
+                <label for="data">Data do Agendamento:</label>
+                <input type="date" id="data" name="data"><br>
+
+                <label for="horas">Horário:</label>
+                <input type="time" id="horario" name="horario"><br>
+
+                <input type="submit">
+            </form>
+        </form>
+
+        <hr>
+
+        <style>
+            table, th, td {
+              border:1px solid black;
+              border-collapse: collapse;
+            }
+            </style>   
+        <body>
+            
+            <h2>Detalhes dos agendamentos</h2>
+            
+            <table style="width:50%">
+            <tr>
+                <th>ID</th>
+                <th>Especialidades</th>
+                <th>Horário</th>
+                <th>Dias de Atendimento</th>
+                <th>Editar</th>
+                <th>Apagar</th>
+
+                <tr>
+                    <td>1</td>
+                    <td>Clínico Geral</td>
+                    <td>07h - 12h</td>
+                    <td>Segunda - Sexta</td>
+                    <td><button class="edit-btn">Editar</button></td>
+                    <td><button class="delete-btn">Apagar</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>2</td>
+                    <td>Fisioterapeuta</td>
+                    <td>08h - 13h</td>
+                    <td>Segunda - Sexta</td>
+                    <td><button class="edit-btn">Editar</button></td>
+                    <td><button class="delete-btn">Apagar</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>3</td>
+                    <td>Psicólogo</td>
+                    <td>10h - 15h</td>
+                    <td>Quarta - Sexta</td>
+                    <td><button class="edit-btn">Editar</button></td>
+                    <td><button class="delete-btn">Apagar</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>4</td>
+                    <td>Nutricionista</td>
+                    <td>08h - 12h</td>
+                    <td>Sexta</td>
+                    <td><button class="edit-btn">Editar</button></td>
+                    <td><button class="delete-btn">Apagar</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>5</td>
+                    <td>Cardiologista</td>
+                    <td>10h - 16h</td>
+                    <td>Segunda - Quarta</td>
+                    <td><button class="edit-btn">Editar</button></td>
+                    <td><button class="delete-btn">Apagar</button></td>
+                  </tr>
+
+
+            </tr>
+
+
+        </table>
+
+
+
+    </main>
+
+    <br>
+    <a href="adm.html"> Voltar</a><br>
+
+    <footer>
+        <p><b>Rua Z, Centro, Baturité, CEP: 62760-000</b></p>
+        <p>Marcelo Lima</p>
+        <a href="autor.html">Quem é você</a>
+    </footer>
+</body>
+
+</html>
